@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Nodejs</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+
+<header>
+    <h1>Tareas por hacer</h1>
+</header>
+
+<body>
+    <div class="container">
+        <h3>Ingrese la tarea</h3>
+        <div>
+            <form id="form-todo" action="" method="post">
+                <input type="text" name="texto" id="texto" placeholder="Escribe tu tarea">
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <div id="todos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarea</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-body">
+                    <!-- Filas se llenarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
