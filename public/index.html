@@ -20,17 +20,17 @@
         <div>
             <form id="form-todo" action="" method="post">
                 <input type="text" name="texto" id="texto" placeholder="Escribe tu tarea">
-                <button type="submit">Agregar</button>
+                <button class="btn btn-edit" type="submit">Agregar</button>
             </form>
         </div>
         <div id="todos">
-            <table>
+            <table class="min-w-full bg-white border-separate" style="border-spacing: 0">
                 <thead>
                     <tr>
-                        <th>Tarea</th>
-                        <th>Estado</th>
-                        <th>Acción</th>
-                        <th>Eliminar</th>
+                        <th class="px-6 py-3 text-center text-xs font-semibold uppercase tracking-wider bg-gray-200">Tarea</th>
+                        <th class="px-6 py-3 text-center text-xs font-semibold uppercase tracking-wider bg-gray-200">Estado</th>
+                        <th class="px-6 py-3 text-center text-xs font-semibold uppercase tracking-wider bg-gray-200">Acción</th>
+                        <th class="px-6 py-3 text-center text-xs font-semibold uppercase tracking-wider bg-gray-200">Eliminar</th>
                     </tr>
                 </thead>
                 <tbody id="tabla-body">

@@ -79,15 +79,15 @@ const llenarTabla = (data) => {
     data.forEach(todo => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-            <td>${todo.text}</td>
-            <td>${todo.completed ? 'Completada' : 'Pendiente'}</td>
-            <td>
-                <button class="btn btn-primary" onclick="marcarTarea('${todo._id}','${todo.completed}')">
+            <td class="px-6 py-4 text-center text-sm text-gray-700">${todo.text}</td>
+            <td class="px-6 py-4 text-center text-sm text-gray-700">${todo.completed ? 'Completada' : 'Pendiente'}</td>
+            <td class="px-6 py-4 text-center text-sm text-gray-700">
+                <button class="btn btn-edit" onclick="marcarTarea('${todo._id}','${todo.completed}')">
                     ${todo.completed ? 'Marcar pendiente' : 'Marcar completada'}
                 </button>
             </td>
             <td>
-                <button class="btn btn-danger" onclick="eliminarTarea('${todo._id}')" >
+                <button class="btn btn-delete"  onclick="eliminarTarea('${todo._id}')" >
                     Eliminar
                 </button>
             </td>
