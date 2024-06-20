@@ -21,6 +21,8 @@ const registrarTarea = () => {
             // Mostramos el mensaje de respuesta
             obtenerTareas();
             responseMessage.textContent = data.response;
+                document.getElementById('texto').value = '';
+
         })
         .catch(err => {
             // En caso de error, mostramos un mensaje

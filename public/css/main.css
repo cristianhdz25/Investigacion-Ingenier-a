@@ -1,12 +1,6 @@
-/* header {
-    margin-bottom: 20px;
-    text-align: center;
-}
-body
-{
+/* Añadir este CSS al final de tu archivo CSS */
 
-}
-
+/* Estilo para centrar la tabla y reducir su ancho */
 .container {
     margin-top: 50px;
     display: flex;
@@ -14,51 +8,21 @@ body
     justify-content: center;
     padding: 10px;
     text-align: center;
+    align-items: center;
+    /* Para centrar horizontalmente */
 }
 
-.container div {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
-
-header {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-body {
-    /* background-color: #0F1C2E; */
-    /* color: white; */
-}
-
-.container {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: aqua; */
-    padding: 10px;
-    text-align: center;
-
-}
-
-.container div {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
+/* Estilo para reducir el ancho de la tabla y centrarla */
 table {
+    width: 80%;
+    /* Ajusta el porcentaje según tu preferencia */
+    /* max-width: 800px; */
+    /* Ajusta el valor según tu preferencia */
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 20px;
     background-color: var(--bg-200);
     border-radius: 8px;
-    width: 50%;
 }
 
 /* Estilos para los encabezados */
@@ -164,6 +128,14 @@ tr:hover {
     color: white;
 }
 
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
 
-
-
+form {
+    display: flex;
+}
